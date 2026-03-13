@@ -1,0 +1,114 @@
+body{
+    font-family: Arial;
+    margin: 0;
+    background: linear-gradient(135deg,#4B0082,#FFD700);
+    background-size: 400% 400%;
+    animation: bg 15s infinite;
+}
+
+@keyframes bg{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+header{
+    background: linear-gradient(270deg,#FFD700,#FFC700,#FFD700);
+    color: white;
+    text-align: center;
+    padding: 25px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav{
+    background: #222;
+    padding: 12px;
+    text-align: center;
+}
+
+nav a{
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#formProduit{
+    background: white;
+    width: 350px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+#formProduit input,
+#formProduit select{
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+#formProduit button{
+    width: 100%;
+    padding: 12px;
+    background: #FFD700;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#imagePreview{
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.produits{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.produit{
+    background: white;
+    width: 230px;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.produit img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.produit button{
+    background: #25D366;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+footer{
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
