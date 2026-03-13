@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>YbaiTech Market - Ngaoundéré</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+🛒 YbaiTech Market<br>
+Marché local - Ngaoundéré
+</header>
+
+<nav>
+<a href="#">Accueil</a>
+<a href="#formProduit">Vendre</a>
+<a href="#produitsSection">Produits</a>
+</nav>
+
+<div id="formProduit">
+<h2>Ajouter un produit</h2>
+<input type="text" id="nomProduit" placeholder="Nom du produit">
+<input type="text" id="prixProduit" placeholder="Prix en FCFA">
+<select id="categorieProduit">
+<option value="Téléphone">Téléphone</option>
+<option value="Habits">Habits</option>
+<option value="Chaussures">Chaussures</option>
+<option value="Autre">Autre</option>
+</select>
+<input type="text" id="contactVendeur" placeholder="Téléphone ou WhatsApp">
+<button onclick="document.getElementById('imageProduit').click()">Ajouter une image</button>
+<input type="file" id="imageProduit" accept="image/*" style="display:none;" onchange="previewImage(event)">
+<img id="imagePreview" src="https://via.placeholder.com/150">
+<button onclick="ajouterProduit()">Publier produit</button>
+</div>
+
+<div class="produits" id="produitsSection"></div>
+
+<footer>
+© 2026 YbaiTech Market
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
